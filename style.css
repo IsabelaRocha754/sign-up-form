@@ -1,17 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+
 body{
     display: flex;
     align-items: center;
     margin: 0;
     height: 100vh;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
 }
 
-img{
+.leaves{
     height: 100vh;
+}
+
+.area{
+    position: absolute;
+    background-color: #00000080;
+    width: 100%;
+    height: 20em;
+    top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 15em;
+}
+
+.odin{
+    color: white;
+    font-size: 8em;
+    font-family: "Jim Nightshade";
+}
+
+.credit{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    left: 12em;
 }
 
 .image{
     display: flex;
+    position: relative;
 }
 
 .container{
@@ -20,7 +51,6 @@ img{
     background-color: whitesmoke;
     flex-grow: 1;
     height: 100vh;
-    align-items: left;
     justify-content: center;
 }
 
@@ -30,28 +60,43 @@ img{
     background-color: white;
     margin: 0;
     flex-grow: 1;
-    padding: 100px;
 }
 
 .inputs{
-    padding-top: 10px;
+    padding: 6.25rem;
+    padding-top: 0.625rem;
+    font-size: 0.7em;
+    box-shadow: 0 1em 1em  rgba(0, 0, 0, 0.25);
 }
 
 .legend{
-    padding-bottom: 10px;
+    padding: 1rem;
+    padding-left: 6.25rem;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 input,
 button{
     width: 15em;
-    padding: 0;
+    padding: 0.5em;
     margin: 0;
     box-sizing: border-box;
 }
 
+input[type="password"]:user-invalid{
+    border: 0.1em solid red;
+}
+
+input:focus{
+    outline: none;
+    border: 0.1em solid blue;
+    box-shadow: 0 0 0.2em rgba(0, 0, 255, 0.3);
+}
+
 input{
     border: 0.1em solid #E5E7EB;
-    border-radius: 0.1em;
+    border-radius: 0.5em;
 }
 
 .left{
@@ -59,26 +104,46 @@ input{
 }
 
 .text{
-    padding: 100px;
+    padding: 6.25rem;
+    padding-bottom: 0.625rem;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .log-in{
-    padding-top: 20px;
-    padding-left: 100px;
+    padding-top: 1.25rem;
+    padding-left: 6.25rem;
     margin: 0;
 }
 
 button{
-    margin-left: 100px;
-    margin-top: 40px;
+    margin-left: 6.25rem;
+    margin-top: 2.5rem;
     background-color: #596D48;
     border: solid #596D48;
-    padding: 10px;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     color: white;
+    cursor: pointer;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button:active{
+    transform: translateY(0.25em);
 }
 
 .fill{
     display: flex;
     flex-direction: column;
+}
+
+.log-link{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+.credit-link{
+    color: white;
 }

@@ -8,7 +8,12 @@
 </head>
 <body>
     <div class="image">
-        <img src="/home/isabela/Downloads/halie-west-25xggax4bSA-unsplash.jpg" alt="Image of green leaves">
+        <img class="leaves" src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="Image of green leaves">
+        <div class="area">
+            <img class="logo" src="images/odin-lined.png" alt="The Odin Project logo">
+            <div class="odin">ODIN</div>
+        </div>
+        <div class="credit">Photo by <a class="credit-link" href="https://unsplash.com/pt-br/@haliewestphoto">Hailey West</a> on <a class="credit-link" href="https://unsplash.com/pt-br">Unsplash</a></div>
     </div>
     <div class="container">
         <div class="text">
@@ -22,34 +27,34 @@
                 <section class="left">
                     <p class="fill">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name" />
+                        <input type="text" name="first-name" id="first-name" required />
                     </p>
                     <p class="fill">
                         <label for="mail">EMAIL</label>
-                        <input type="email" name="email" id="email" />
+                        <input type="email" name="email" id="mail" required />
                     </p>
                     <p class="fill">
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" name="password" id="pwd" />
+                        <input type="password" name="password" id="pwd" required minlength="8" />
                     </p>
                 </section>
                 <section class="right">
                     <p class="fill">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name" />
+                        <input type="text" name="last-name" id="last-name" required />
                     </p>
                     <p class="fill">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone-number" id="phone" />
+                        <input type="tel" name="phone-number" id="phone" required />
                     </p>
                     <p class="fill">
                         <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                        <input type="password" name="password" id="confirm-pwd" />
+                        <input type="password" name="password" id="confirm-pwd" required minlength="8" />
                     </p>
                 </section>
             </section>
             <button type="submit">Create Account</button>
-            <p class="log-in">Already have an account? <a href="example.com">Log In</a></p>
+            <p class="log-in">Already have an account? <a class="log-link" href="#">Log In</a></p>
         </form>
     </div>
 </body>
